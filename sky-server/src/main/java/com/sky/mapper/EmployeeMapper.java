@@ -32,4 +32,9 @@ public interface EmployeeMapper {
     * 员工账号状态更新,根据主键动态修改属性，因此还是写在xml里
     * */
     void update(Employee employee);
+
+    @Select("select * from employee where id = #{id}")
+    Employee getById(Long id);
+
+
 }
