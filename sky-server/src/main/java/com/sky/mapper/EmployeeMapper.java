@@ -24,6 +24,12 @@ public interface EmployeeMapper {
     void insert(Employee employee);
     /*
     * 员工分页查询方法
+    * 查询语句写在xml里了
     * */
     Page<Employee> pageQuery(EmployeePageQueryDTO employeePageQueryDTO);
+
+    /*
+    * 员工账号状态更新,根据主键动态修改属性，因此还是写在xml里
+    * */
+    void update(Employee employee);
 }
