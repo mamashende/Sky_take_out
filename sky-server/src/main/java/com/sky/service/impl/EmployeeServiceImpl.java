@@ -124,7 +124,10 @@ public class EmployeeServiceImpl implements EmployeeService {
                    .status(status)
                    .id(id)
                     .build();*/
-
+        /*Employee employee = Employee.builder()
+                .status(status)
+                .id(id)
+                .build();*/
         employeeMapper.update(employee);
     }
 }
